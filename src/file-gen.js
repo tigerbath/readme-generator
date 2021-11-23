@@ -26,4 +26,8 @@ const appendFile = (filePath, data) => {
     }
 };
 // Export
-const exportFile = () => {};
+module.exports = {
+    readFile,
+    writeFile,
+    appendFile,
+};
