@@ -1,3 +1,5 @@
+const inquirer = require("inquirer");
+
 console.log("hi");
 
 // declare questions
@@ -110,7 +112,7 @@ const generateLicense = (answers) => {
 
     ADD LICENSE HERE`
 };
-
+// Generate readme document 
 const generateReadme = (answers) => {
   return `${generateTitle(answers)}
   
@@ -130,15 +132,15 @@ const generateReadme = (answers) => {
   `;
 };
 
-};
+
 // use async await
 const init = async () => {
   // prompt questions using inquirer
-  // generate title using answers
+  const answers = await inquirer.prompt();
+  // generate read me
   const readme = generateReadme();
-
-  console.log(readme);
-  // write generated readme to a file
+  // write generated read me to file
+  writeToFile();
 };
 
 init();
