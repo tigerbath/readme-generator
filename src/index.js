@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const utils = require("./utils");
-const { writeToFile } = require("./file-gen");
+const { writeToFile, writeFile } = require("./file-gen");
 
 console.log("hi");
 
@@ -71,7 +71,7 @@ const generateReadme = (answers) => {
 
   ${utils.generateTests(answers)}
 
-  ${utils.generateContributing(answers)}
+  ${utils.generateContributions(answers)}
 
   ${utils.generateLicense(answers)}
   `;
@@ -84,7 +84,7 @@ const init = async () => {
   // generate read me
   const readme = generateReadme(answers);
   // write generated read me to file
-  writeToFile();
+  writeFile("./user-generated-readme.md", readme);
 };
 
 init();
