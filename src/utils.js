@@ -33,8 +33,9 @@ const generateInstallation = ({ installation, installationProcess }) => {
 };
 
 // description generator
-const generateDescription = () => {
-  return "";
+const generateDescription = ({ description }) => {
+  return `### Description
+  ${description}`;
 };
 // generate usage
 const generateUsage = () => {
