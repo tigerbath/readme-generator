@@ -1,6 +1,6 @@
 // title generator
-const generateTitle = () => {
-  return "";
+const generateTitle = ({ title }) => {
+  return "# ${title}";
 };
 
 // other contents generator
