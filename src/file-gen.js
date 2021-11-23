@@ -18,6 +18,12 @@ const writeFile = (filePath, data) => {
     }
 };
 // Append file
-const appendFile = () => {};
+const appendFile = (filePath, data) => {
+    try {
+        fs.appendFileSync(filePath, data);
+    } catch (error) {
+        console.log(error.message);
+    }
+};
 // Export
 const exportFile = () => {};
