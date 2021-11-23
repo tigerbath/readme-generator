@@ -22,11 +22,11 @@ const questions = [
     name: "installation",
   },
   {
-    type: "input"
-    message: "installationProcess"
-    name: "Enter installation information for your app here"
+    type: "input",
+    message: "installationProcess",
+    name: "Enter installation information for your app here",
     when: (answers) => answers.installation === true,
-  }
+  },
   {
     type: "input",
     message: "Has this project been tested?",
