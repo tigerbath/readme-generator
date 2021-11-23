@@ -80,9 +80,9 @@ const generateReadme = (answers) => {
 // use async await to initialize user interaction
 const init = async () => {
   // prompt questions using inquirer
-  const answers = await inquirer.prompt();
+  const answers = await inquirer.prompt(questions);
   // generate read me
-  const readme = generateReadme();
+  const readme = generateReadme(answers);
   // write generated read me to file
   writeToFile();
 };
