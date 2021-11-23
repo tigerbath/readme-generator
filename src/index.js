@@ -17,10 +17,16 @@ const questions = [
     name: "description",
   },
   {
-    type: "input",
+    type: "confirm",
     message: "Does your project require installation information?",
     name: "installation",
   },
+  {
+    type: "input"
+    message: "installationProcess"
+    name: "Enter installation information for your app here"
+    when: (answers) => answers.installation === true,
+  }
   {
     type: "input",
     message: "Has this project been tested?",
@@ -28,12 +34,12 @@ const questions = [
   },
   {
     type: "input",
-    message: "What are the usage rights?",
+    message: "How is this application used?",
     name: "usage",
   },
   {
-    type: "list",
-    message: "Who contributed to this project?",
+    type: "input",
+    message: "Add contributors email here",
     name: "contributions",
   },
   {
@@ -52,7 +58,8 @@ const questions = [
 
 // Generate readme document
 const generateReadme = (answers) => {
-  return `${generateTitle(answers)}
+  return `${utils.generateLicenseBadge(answers)}
+  ${utils.generateTitle(answers)}
   
   ${utils.generateTable(answers)}
   
