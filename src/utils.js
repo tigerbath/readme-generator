@@ -19,9 +19,19 @@ const generateTable = () => {
   return "";
 };
 // installation details generator
-const generateInstallation = () => {
-  return "";
+const generateInstallation = ({ installation, installationProcess }) => {
+  if (installation) {
+    return `### Installation
+    Run this script to install required packages for this application:
+    
+    \`\`\`
+    ${installationProcess}
+    \`\`\``;
+  } else {
+    return "";
+  }
 };
+
 // description generator
 const generateDescription = () => {
   return "";
