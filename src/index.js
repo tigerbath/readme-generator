@@ -1,7 +1,45 @@
 console.log("hi");
 
 // declare questions
-const questions = [];
+const questions = [
+  {
+    type: "input",
+    message: "What is the title of your project?",
+    name: "title"
+  },{
+    type: "input",
+    message: "Please give a description of your project",
+    name: "description"
+  },{
+    type: "input",
+    message: "Does your project require installation information?",
+    name: "installation"
+  },{
+    type: "input",
+    message: "Has this project been tested?",
+    name: "test"
+  },{
+    type: "input",
+    message: "What are the usage rights?",
+    name: "usage"
+  },{
+    type: "list",
+    message: "Who contributed to this project?",
+    name: "contributions"
+  },{
+    type: "list",
+    message: "Please select what license you used",
+    name: "license",
+    choices : [
+      "APACHE 2.0",
+      "BSD 3",
+      "BSD 2",
+      "MIT",
+      "MOZILLA PUBLIC LICENSE 2.0"
+    ]
+    }
+  }
+];
 
 //generate questions
 const generateTitle = (answers) => {
@@ -97,6 +135,9 @@ const generateReadme = (answers) => {
 const init = async () => {
   // prompt questions using inquirer
   // generate title using answers
+  const readme = generateReadme();
+
+  console.log(readme);
   // write generated readme to a file
 };
 
