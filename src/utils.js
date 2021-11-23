@@ -4,8 +4,14 @@ const generateTitle = ({ title }) => {
 };
 
 // other contents generator
-const generateContents = () => {
-  return "";
+const generateContents = ({ installation, usage }) => {
+  const contents = [];
+
+  if (installation) contents.push("- [Installation](#installation)");
+
+  if (usage) contents.push("- [usage](#usage)");
+
+  return contents;
 };
 
 // table of contents generator
