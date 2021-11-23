@@ -4,6 +4,19 @@ const generateTitle = () => {
 };
 
 // other contents generator
-const getContents = () => {
+const generateContents = () => {
+  return "";
+};
+
+// table of contents generator
+const generateTable = () => {
+  return "";
+};
+// installation details generator
+const getInstallation = () => {
+  return "";
+};
+// description generator
+const getDescription = () => {
   return "";
 };
