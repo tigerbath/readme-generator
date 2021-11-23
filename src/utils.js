@@ -20,3 +20,11 @@ const getInstallation = () => {
 const getDescription = () => {
   return "";
 };
+// generate usage
+const generateUsage = () => {
+  return "";
+};
+// generate tests
+const generateTests = () => {
+  return "";
+};
