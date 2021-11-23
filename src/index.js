@@ -1,4 +1,6 @@
 const inquirer = require("inquirer");
+const utils = require("./utils");
+const { writeToFile } = require("./file-gen");
 
 console.log("hi");
 
