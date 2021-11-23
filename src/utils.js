@@ -4,3 +4,6 @@ const generateTitle = () => {
 };
 
 // other contents generator
+const getContents = () => {
+  return "";
+};
