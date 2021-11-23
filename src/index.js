@@ -116,24 +116,24 @@ const generateLicense = (answers) => {
 const generateReadme = (answers) => {
   return `${generateTitle(answers)}
   
-  ${generateTableOfContents(answers)}
+  ${utils.generateTable(answers)}
   
-  ${generateDescription(answers)}
+  ${utils.generateDescription(answers)}
   
-  ${generateInstallation(answers)}
+  ${utils.generateInstallation(answers)}
   
-  ${generateUsage(answers)}
+  ${utils.generateUsage(answers)}
 
-  ${generateTests(answers)}
+  ${utils.generateTests(answers)}
 
-  ${generateContributing(answers)}
+  ${utils.generateContributing(answers)}
 
-  ${generateLicense(answers)}
+  ${utils.generateLicense(answers)}
   `;
 };
 
 
-// use async await
+// use async await to initialize user interaction
 const init = async () => {
   // prompt questions using inquirer
   const answers = await inquirer.prompt();

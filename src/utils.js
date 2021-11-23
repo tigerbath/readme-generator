@@ -13,11 +13,11 @@ const generateTable = () => {
   return "";
 };
 // installation details generator
-const getInstallation = () => {
+const generateInstallation = () => {
   return "";
 };
 // description generator
-const getDescription = () => {
+const generateDescription = () => {
   return "";
 };
 // generate usage
@@ -27,4 +27,30 @@ const generateUsage = () => {
 // generate tests
 const generateTests = () => {
   return "";
+};
+// generate license
+const generateLicense = () => {
+  return "";
+};
+// generate license badge
+const generateLicenseBadge = () => {
+  return "";
+};
+// generate contributions
+const generateContributions = () => {
+  return "";
+};
+
+// export for usage
+module.exports = {
+  generateTitle,
+  generateContents,
+  generateTable,
+  generateInstallation,
+  generateDescription,
+  generateUsage,
+  generateTests,
+  generateLicense,
+  generateLicenseBadge,
+  generateContributions,
 };
