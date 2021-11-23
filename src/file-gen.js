@@ -10,7 +10,13 @@ const readFile = (filePath) => {
     }
 };
 // Write file
-const writeFile = () => {};
+const writeFile = (filePath, data) => {
+    try {
+        fs.writeFileSync(filePath, data);
+    } catch (error){
+        console.log(error.message);
+    }
+};
 // Append file
 const appendFile = () => {};
 // Export
