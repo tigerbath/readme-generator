@@ -56,8 +56,18 @@ const generateUsage = ({ usage }) => {
   \`\`\``;
 };
 // generate tests
-const generateTests = () => {
-  return "";
+const generateTests = ({ tests, testProcess }) => {
+  if (tests) {
+    return `## Tests
+  
+  To test this application run the following tests:
+  
+  \`\`\`
+  ${testProcess}
+  \`\`\``;
+  } else {
+    return "";
+  }
 };
 // generate license
 const generateLicense = ({ license }) => {
@@ -81,7 +91,7 @@ const generateLicenseBadge = ({ license }) => {
   return licenseString;
 };
 // generate contributions
-const generateContributions = ({ contribute, github }) => {
+const generateContributing = ({ contribute, github }) => {
   return `### Contributing
 Think you can help to improve this application? Drop me an email: ${contribute}
 Find my GitHub profile here: [${github}](https://github.com/${github})`;
@@ -98,5 +108,5 @@ module.exports = {
   generateTests,
   generateLicense,
   generateLicenseBadge,
-  generateContributions,
+  generateContributing,
 };
