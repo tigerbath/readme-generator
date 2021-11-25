@@ -13,7 +13,7 @@
 
 ## Walkthrough Video
 
-Click [here]() to view my walkthrough video on how to use this application
+Click [here](https://www.awesomescreenshot.com/video/6165815?key=b9ff946188d0e0fe8e355e6edaab32f7) to view my walkthrough video on how to use this application
 
 ## GitHub Repository
 
