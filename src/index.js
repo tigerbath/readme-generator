@@ -23,18 +23,24 @@ const questions = [
   },
   {
     type: "input",
-    message: "installationProcess",
-    name: "Enter installation information for your app here",
+    message: "Enter installation information for your app here",
+    name: "installprocess",
     when: (answers) => answers.installation === true,
   },
   {
-    type: "input",
+    type: "confirm",
     message: "Has this project been tested?",
-    name: "test",
+    name: "testprompt",
   },
   {
     type: "input",
-    message: "How is this application used?",
+    message: "Provide testing information here:",
+    name: "test",
+    when: (answers) => answers.testprompt === true,
+  },
+  {
+    type: "input",
+    message: "How is this application used? Give instructions here:",
     name: "usage",
   },
   {
@@ -44,7 +50,7 @@ const questions = [
   },
   {
     type: "list",
-    message: "Please select what license you used",
+    message: "Please select what license you used:",
     name: "license",
     choices: ["APM", "AUR License", "Bower", "MIT", "GitHub"],
   },
