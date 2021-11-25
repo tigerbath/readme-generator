@@ -52,8 +52,9 @@ const generateTests = () => {
   return "";
 };
 // generate license
-const generateLicense = () => {
-  return "";
+const generateLicense = ({ license }) => {
+  return ` License
+  This application and it's affiliated property is licensed under ${license}`;
 };
 // generate license badge
 const generateLicenseBadge = () => {
