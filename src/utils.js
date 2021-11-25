@@ -15,8 +15,16 @@ const generateContents = ({ installation, usage }) => {
 };
 
 // table of contents generator
-const generateTable = () => {
-  return "";
+const generateTable = (answers) => {
+  const contents = [
+    "- [Description](#description)",
+    ...generateContents(answers),
+    "- [Contributing](#contributing)",
+    "- [License](#license)",
+  ];
+
+  return `## Contents\n
+  ${contents.join("\n")}`;
 };
 // installation details generator
 const generateInstallation = ({ installation, installationProcess }) => {
