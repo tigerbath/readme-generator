@@ -1,57 +1,52 @@
-# readme-generator
-
-### questions
-
-- what is the title of the project?
-- what is the description?
-- what is the installation script? (ask if they have one first)
-- how do i use the application? (ask if they have one first)
-- how do i test the application? (ask if they have one first)
-- name your credits for this project
-- choose a license: (present a list)
-- what is your github user name?
-- what is your email?
-- how can others contribute to this application?
-
-# title ![MIT](https://img.shields.io/static/v1?label=MIT&message=license&color=blue)
+# ReadMe File Generator
 
 ## Table of contents
 
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Tests](#tests)
-- [Contributing](#contributing)
-- [License](#license)
+- [Walkthrough Video](#walkthrough-video)
+- [GitHub Repository](#github-repository)
+- [About The Application](#about-the-application)
+  - [Technologies Used](#technologies-used)
+  - [User Flow](#user-flow)
+- [Contributors](#contributors)
+- [Plans For Improvement](#plans-for-improvement)
+- [Screenshots](#screenshots) -[Example Generated ReadMe](#example-generated-readme)
 
-## Description
+## Walkthrough Video
 
-ADD DESCRIPTION HERE
+Click [here]() to view my walkthrough video on how to use this application
 
-## Installation
+## GitHub Repository
 
-Run the following script to install the packages required for this application:
+Click [here](https://github.com/tigerbath/readme-generator) to visit the GitHub Repository for this application
 
-```
-ADD SCRIPT HERE
-```
+## About The Application
 
-## Usage
+This application was designed to provide a quick alternative to creating clean, concise and uniform readme.md files for any project the user chooses to create. Once the user has installed the package, they start the application by typing 'npm run start', they will then be prompted with a number of questions. Once the user has given answers to these questions a completed generated readme file is filed in the 'user-generated-readme.md' file.
 
-To use the application run the following script:
+## Technologies Used
 
-```
-ADD SCRIPT HERE
-```
+JavaScript - inquirer.npm - node.js
 
-## Tests
+## User flow
 
-To use the application run the following script:
+AS a user
+I want to install the package
+SO that when I run npm run start
+A number of questions are prompted for me to answer
+ONCE I have completed the questions
+A readme is generated for me to use
 
-```
-ADD TEST HERE
-```
+## Contributors
 
-## Contributing
+- [Matt Palmer](https://github.com/tigerbath)
+- [Suraj Verma](https://github.com/surajverma2587)
 
-ADD TEXT HERE
+## Plans For Improvement
+
+- I would like to add increased versatility to this application, improving the license badge library to hold many more
+- I would like to add the option to import media such as screenshots into this application
+
+## Screenshots
+
+- Example Generated ReadMe
+  <img src="./src/images/generatedreadmeexample.PNG">
