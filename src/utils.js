@@ -78,13 +78,13 @@ const generateLicense = ({ license }) => {
 const generateLicenseBadge = ({ license }) => {
   let licenseString;
   if (license === "APM") {
-    licenseString = `[License: APM](https://img.shields.io/badge/license-MIT-green)`;
+    licenseString = `[License: APM](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   } else if (license === "AUR License") {
     licenseString = `[License: AUR License](https://img.shields.io/badge/license-Apache-blue)`;
   } else if (license === "Bower") {
     licenseString = `[License: Bower](https://img.shields.io/badge/license-MIT-green)`;
   } else if (license === "MIT") {
-    licenseString = `[License: MIT](https://img.shields.io/badge/license-MIT-green)`;
+    licenseString = `[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   } else if (license === "GitHub") {
     licenseString = `[License: GitHub](https://img.shields.io/badge/license-MIT-green)`;
   }
@@ -94,6 +94,7 @@ const generateLicenseBadge = ({ license }) => {
 const generateContributing = ({ contribute, github }) => {
   return `### Contributing
 Think you can help to improve this application? Drop me an email: ${contribute}
+
 Find my GitHub profile here: [${github}](https://github.com/${github})`;
 };
 
