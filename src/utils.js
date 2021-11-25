@@ -53,7 +53,7 @@ const generateTests = () => {
 };
 // generate license
 const generateLicense = ({ license }) => {
-  return ` License
+  return `### License
   This application and it's affiliated property is licensed under ${license}`;
 };
 // generate license badge
@@ -73,8 +73,10 @@ const generateLicenseBadge = ({ license }) => {
   return licenseString;
 };
 // generate contributions
-const generateContributions = () => {
-  return "";
+const generateContributions = ({ contribute, github }) => {
+  return `### Contributing
+Think you can help to improve this application? Drop me an email: ${contribute}
+Find my GitHub profile here: [${github}](https://github.com/${github})`;
 };
 
 // export for usage
