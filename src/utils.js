@@ -57,8 +57,20 @@ const generateLicense = ({ license }) => {
   This application and it's affiliated property is licensed under ${license}`;
 };
 // generate license badge
-const generateLicenseBadge = () => {
-  return "";
+const generateLicenseBadge = ({ license }) => {
+  let licenseString;
+  if (license === "APM") {
+    licenseString = `[License: APM](https://img.shields.io/badge/license-MIT-green)`;
+  } else if (license === "AUR License") {
+    licenseString = `[License: AUR License](https://img.shields.io/badge/license-Apache-blue)`;
+  } else if (license === "Bower") {
+    licenseString = `[License: Bower](https://img.shields.io/badge/license-MIT-green)`;
+  } else if (license === "MIT") {
+    licenseString = `[License: MIT](https://img.shields.io/badge/license-MIT-green)`;
+  } else if (license === "GitHub") {
+    licenseString = `[License: GitHub](https://img.shields.io/badge/license-MIT-green)`;
+  }
+  return licenseString;
 };
 // generate contributions
 const generateContributions = () => {

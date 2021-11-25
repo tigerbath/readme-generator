@@ -46,13 +46,7 @@ const questions = [
     type: "list",
     message: "Please select what license you used",
     name: "license",
-    choices: [
-      "APACHE 2.0",
-      "BSD 3",
-      "BSD 2",
-      "MIT",
-      "MOZILLA PUBLIC LICENSE 2.0",
-    ],
+    choices: ["APM", "AUR License", "Bower", "MIT", "GitHub"],
   },
 ];
 
