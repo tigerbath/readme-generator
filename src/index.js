@@ -2,7 +2,6 @@ const inquirer = require("inquirer");
 const utils = require("./utils");
 const { writeToFile, writeFile } = require("./file-gen");
 
-console.log("hi");
 
 // declare questions
 const questions = [
@@ -49,6 +48,11 @@ const questions = [
     name: "contributions",
   },
   {
+    type: "input",
+    message: "Add your GitHub username here:",
+    name: "github",
+  }
+  {
     type: "list",
     message: "Please select what license you used:",
     name: "license",
@@ -71,7 +75,7 @@ const generateReadme = (answers) => {
 
   ${utils.generateTests(answers)}
 
-  ${utils.generateContributions(answers)}
+  ${utils.generateContributing(answers)}
 
   ${utils.generateLicense(answers)}
   `;
