@@ -2,7 +2,6 @@ const inquirer = require("inquirer");
 const utils = require("./utils");
 const { writeToFile, writeFile } = require("./file-gen");
 
-
 // declare questions
 const questions = [
   {
@@ -44,14 +43,14 @@ const questions = [
   },
   {
     type: "input",
-    message: "Add contributors email here",
-    name: "contributions",
+    message: "Add contributors email here:",
+    name: "contribute",
   },
   {
     type: "input",
     message: "Add your GitHub username here:",
     name: "github",
-  }
+  },
   {
     type: "list",
     message: "Please select what license you used:",
