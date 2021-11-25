@@ -38,8 +38,14 @@ const generateDescription = ({ description }) => {
   ${description}`;
 };
 // generate usage
-const generateUsage = () => {
-  return "";
+const generateUsage = ({ usage }) => {
+  return `## Usage
+  
+  To use this application please run the following script:
+  
+  \`\`\`
+  ${usage}
+  \`\`\``;
 };
 // generate tests
 const generateTests = () => {
